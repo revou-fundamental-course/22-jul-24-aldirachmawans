@@ -1,25 +1,51 @@
-nav {
-    
-    display: flex;
-    justify-content: space-between;
-    padding: 12px;
-    align-items: center;
+
+body {
+    font-family: Helvetica;
+    color: rgb(31, 90, 100);
 }
 
-.logo-icon {
-    
-    background-image: url(https://picsum.photos/200);
-    height: 25px;
-    width: 50px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #19a3bb00;
+}
+
+article {
+    margin: 40px;
+}
+
+.cover1 {
+    background: url("../assets/forarticle.jpg");
+    background-size: 110%;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 40px;
+    font-family: Courier New;
+    font-size: large;
+}
+
+.coverfont {
+    font-weight: bolder;
+    margin: 0;
+}
+
+.img-logo {
+    height: 50px;
+    width: 75px;
     background-size: cover;
 }
 
 .nav-container {
     display: flex;
+    font-family: Trebuchet MS;
+    font-size: large;
+    padding-top: 0;
 }
 
-.nav-item {
-    
+.nav-link {
+    color: rgb(31, 90, 100);
+    text-decoration-line: blink;
     padding: 8px;
 }
 
@@ -28,23 +54,57 @@ nav {
 }
 
 .main-content {
+    background: url("../assets/formain.jpg");
+    background-size: 100%;
     display: flex;
+    height: 800px;
+    border-radius: 5px;
 }
 
-.main-content-item {
-    
+.main-content-item {  
     width: 100%;
-    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.font-notification {
+    font-family: Trebuchet MS;
+    padding: 20px;
+    color: rgb(31, 90, 100);
+}
 
-.main-content-banner {
-    
+.main-banner-container {
+    height: 150px;
+    width: 100%;
+}
+
+.main-content-banner {   
     width: 100%;
     height: 150px;
-    background-image: url(https://picsum.photos/150);
+}
+
+.banner-1 {
+    background-image: url(../assets/indonesian.jpg);
+}
+
+.banner-2 {
+    background-image: url(../assets/france.jpg);
+}
+
+.banner-3 {
+    background-image: url(../assets/japan.jpg);
+}
+
+.banner-4 {
+    background-image: url(../assets/rusian.jpg);
+}
+
+.banner-5 {
+    background-image: url(../assets/hongkong.jpg);
+}
+
+.banner-6 {
+    background-image: url(../assets/singapore.jpg);
 }
 
 .item-icon {
@@ -54,6 +114,30 @@ nav {
     background-image: url(https://picsum.photos/25);
     border-radius: 50%;
 }
+.icon-text {
+    display: flex;
+    align-items: center;
+}
+
+h4 {
+    padding-top: 50px;
+}
+
+.icon-font {
+    margin-left: 15px;
+    text-align: left;
+}
+
+.item-number {
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(60, 60, 60, 0.242);
+    border-radius: 50%;
+}
 
 .main-item {
     display: flex;
@@ -61,8 +145,9 @@ nav {
     justify-content: center;
 }
 
+
 input {
-    width: 75%;
+    width: 85%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -70,11 +155,115 @@ input {
     border-radius: 4px;
     box-sizing: border-box;
     font-family: monospace;
+    text-align: center;
+}
+
+select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 button {
-    width: 75%;
-    height: 32px;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+p {
+    color: rgba(60, 60, 60, 0.662);
+}
+
+.second-content {
+    margin-top: 0%;
+    padding-bottom:20px;
+}
+
+.column-three {
+    width: 100%;
+    padding: 50px;
+    margin: 5px;
+    display: flex;
+    text-align: center;
+    height: 100px;
+    border: 2px solid;
+    border-radius: 10px;
+    align-content: center;
+    align-items: center;
+}
+
+.idea {
+    display: flex;
+}
+
+.icon-idea {
+    height: 50px;
+    width: 75px;
+    background-image: url(https://picsum.photos/25);
+    border-radius: 50%;
+}
+
+.favorite {
+    display: flex;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: aliceblue;
-    border: none;
+}
+
+.background-down {
+    background: url("../assets/forfooter.jpg");
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.callus-item {
+    padding: 50px;
+}
+
+.logo-end {
+    background-image: url(https://picsum.photos/200);
+    background-size: 100%;
+    height: 25px;
+    width: 50px;
+    background-size: cover;
+}
+
+.img-footer {
+    background-size: 50%;
+    justify-content: center;
+    height: 80px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button-footer {
+    color: white;
+    text-decoration-line: blink;
+    padding: 8px;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
 }

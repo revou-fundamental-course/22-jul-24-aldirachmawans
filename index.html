@@ -3,52 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trav Now</title>
     <link rel="stylesheet" href="css\style.css">
 </head>
 
-<body>
-
     <nav>
         <header>
-            <div class="logo-icon"></div>
+            <div>
+                <img src="assets\logo.png" class="img-logo">
+            </div>
         </header>
 
         <section class="nav-container">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">Our Package</a>
-            <a class="nav-item">Call us</a>
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#destination">Destination</a>
+            <a class="nav-link" href="#callus">Call us</a>
         </section>
     </nav>
 
-    <main class="main-title">
-        <article>
+    <main id="home" class="main-title">
+        <article class="cover1">
             <header>
-                <h1>Your Trusted Travel Agent</h1>
+                <h1>T R A V N O W</h1>
             </header>
-
-            <p>Your happiness is our happiness.</p>
+            <div class="coverfont">
+                <p>Let's go around the world.</p>
+            </div>
         </article>
 
-        <section class="main-content">
+        <section  class="main-content">
             <article class="main-content-item">
-                <div class="main-content-banner"></div>
-
+                <div class="main-banner-container">
+                    <div class="main-content-banner banner-1"></div>
+                    <div class="main-content-banner banner-2"></div>
+                    <div class="main-content-banner banner-3"></div>
+                    <div class="main-content-banner banner-4"></div>
+                    <div class="main-content-banner banner-5"></div>
+                    <div class="main-content-banner banner-6"></div>
+                </div>
+                <p>"Holidays will be fun with us, come try it now."</p>
                 <div class="main-item">
                     <div class="item-icon"></div>
-                    <div>
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem, ipsum dolor.</p>
+                    <div class="icon-font">
+                        <h3>Tokito Muichiro</h3>
+                        <p>Pelajar, 15th</p>
                     </div>
+                </div>
+                    <h4>P R E P A R A T I O N - B E F O R E - T R A V E L I N G</h4>
+                <div>
+                    <div class="icon-text">
+                        <div class="item-number">1</div>
+                        <div>
+                            <p>Check the items you will bring.</p>
+                        </div>
+                    </div>   
+
+                    <div class="icon-text">
+                        <div class="item-number">2</div>
+                        <div>
+                            <p>Bring medicine just in case.</p>
+                        </div>
+                    </div>
+
+                    <div class="icon-text">
+                        <div class="item-number">3</div>
+                        <div>
+                            <p>And lastly, don't forget to pray for safety on your journey.</p>
+                        </div>
+                    </div>   
                 </div>
             </article>
             
             <form class="main-content-item">
-                <input type="text" />
-                <button type="submit">Submit</button>
+                <div class="font-notification">
+                    <h1>Want to get information about travel discounts from us? Fill in the form below</h1>
+                </div>
+                <div>
+                    <h3>Name:</h3>
+                    <input type="text" id="input-name" placeholder="Full Name" />
+                </div>
+                <div>
+                    <h3>Email Address:</h3>
+                    <input type="text"placeholder="example@email.com"/>
+                </div>
+                <button type="button" onclick="formValidation();">Submit</button>
             </form>
+        </section>
+        
+        <section id="destination"  class="second-content">
+            <h2>DESTINATION</h2>
+            <div class="background-down">
+                <div class="idea">
+                    <div class="column-three">
+                        <div class="icon-idea"></div>
+                        <div class="font-idea">
+                            <h3>Indonesian</h3>
+                            <p>Campuhan Ridge Walk, Candi Borobudur, Taman Budaya GWK, Kota Tua, Tanah Lot, Braga</p>
+                        </div>
+                    </div>
+
+                    <div class="column-three">
+                        <div class="icon-idea"></div>
+                        <div class="font-idea">
+                            <h3>Singapore</h3>
+                            <p>Marina Bay Sands Skypark, Haji Lane, Jewel Changi Airport, Universal Studios Singapore, Singapore Science Centre</p>
+                        </div>
+                    </div>
+
+                    <div class="column-three">
+                        <div class="icon-idea"></div>
+                        <div class="font-idea">
+                            <h3>France</h3>
+                            <p>Eiffel Tower, Museum Louvre, Bridge Pont Alexandre, Place des Vosges, Quartier Latin, Sainte-Chapelle</p>
+                        </div>
+                    </div>
+                 </div>   
+
+                <div class="favorite">
+                    <div class="column-three">
+                        <div class="icon-idea"></div>
+                        <div class="font-idea">
+                            <h3>Japan</h3>
+                            <p>Shibuya Crossing, Mount Fuji, Fushimi Inari Taisha, Dotonbori, Akihabara, Shirakawa-go, Osaka Castle, Biei Blue Pond</p>
+                        </div>
+                    </div>
+
+                    <div class="column-three">
+                        <div class="font-idea">
+                            <h3>Rusian</h3>
+                            <p>Kremlin Kazan, Kislovodsk National Park, Park Izumrudnaya Dolina, Human Puppet Theater, Proval Lake, Ganina Yama Monastery</p>
+                        </div>
+                    </div>
+
+                    <div class="column-three">
+                        <div class="icon-idea"></div>
+                        <div class="font-idea">
+                            <h3>Hong Kong</h3>
+                            <p>Victoria Peak Tram, Sky100 Hong Kong Observation Deck, Victoria Harbour, Temple Street, Wong Tai Sin Temple</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <article class="callus-item">
+                    <div>
+                        <h1>We are ready to help you</h1>
+                        <p>If you have any questions, you can click the button below</p>
+                        <div>
+                            <button type="submit">
+                                <a class="button-footer" href="https://wa.me/+6285282405572" target="_blank">Call Us</a>
+                            </button>
+                         </div>
+                    </div>
+                </div>
+                </article>
+                
+                <footer id="callus">
+                    <div>
+                        <img src="assets\logofooter.png" class="img-footer">
+                    </div>
+                    <div>
+                        <p>Terms of Service</p>
+                        <p>2019</p>
+                    </div>
+                </footer>
         </section>
     </main>
 
+    <script src="js\script.js"></script>
 </body>
 </html>
